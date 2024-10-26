@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Rumah Sakit - Provinsi Jawa Timur</title>
+    <link rel="stylesheet" href="rumahsakit.css">
+    <script defer src="rumahsakit.js"></script>
+</head>
+<body>
+
+<header>
+    <a href="dashboard.html">
+        <img src="img/logo.png" alt="Logo Provinsi Jatim">
+    </a>
+    <h1>Informasi Rumah Sakit</h1>
+</header>
+
+<main>
+    <section class="hospital-info">
+        <h2>Pilih Rumah Sakit Berdasarkan Kategori</h2>
+
+        <div class="filter-container">
+            <label for="city">Pilih Kota:</label>
+            <select id="city">
+                <option value="all">Semua Kota</option>
+                <option value="Surabaya">Surabaya</option>
+                <option value="Sidoarjo">Sidoarjo</option>
+                <option value="Malang">Malang</option>
+            </select>
+
+            <label for="type">Pilih Tipe Rumah Sakit:</label>
+            <select id="type">
+                <option value="all">Semua Tipe</option>
+                <option value="Umum">Umum</option>
+                <option value="Spesialis">Spesialis</option>
+                <option value="RSUD">RSUD</option>
+            </select>
+        </div>
+
+        <table class="hospital-table">
+            <thead>
+                <tr>
+                    <th>Nama Rumah Sakit</th>
+                    <th>Kota</th>
+                    <th>Tipe</th>
+                    <th>Alamat</th>
+                    <th>Telepon</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="hospital-list">
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<div id="registration-form" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Pendaftaran Rumah Sakit</h2>
+        <form id="hospital-registration">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Nomor Telepon:</label>
+            <input type="text" id="phone" required>
+
+            <button type="submit">Daftar</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Pemerintah Provinsi Jawa Timur. Semua hak dilindungi.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengaduan Masyarakat</title>
+    <link rel="stylesheet" href="pengaduan.css">
+    <script src="pengaduan.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container"> 
+            <div class="logo">
+                <a href="dashboard.html">
+                    <img src="img/logo.png" alt="Logo Provinsi Jatim">
+                </a>
+            </div>
+            <h1>Pengaduan Masyarakat</h1> 
+        </div>
+        <p>Silakan isi form di bawah ini untuk menyampaikan pengaduan Anda.</p> 
+    </header>
+    
+    <section class="complaint-form">
+        <form>
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subjek Pengaduan:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Isi Pengaduan:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Kirim Pengaduan</button>
+        </form>
+
+        <div class="notification">
+            Pengaduan Anda berhasil dikirim. Mengalihkan ke halaman daftar pengaduan...
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pemerintah Provinsi Jawa Timur. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>

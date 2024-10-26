@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Pemerintah Jawa Timur</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="dashboard.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo Provinsi Jatim">
+                <h1>PROVINSI JAWA TIMUR</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="#">Layanan Publik</a>
+                <a href="#">Profil</a>
+                <a href="#">Berita</a>
+                <a href="#">PPID</a>
+                <a href="#">Dashboard</a>
+                <button class="language-btn">Indonesia <i class="fas fa-chevron-down"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Selamat Datang Di</h2>
+            <h1>Portal Resmi Pemerintah<br>Provinsi Jawa Timur</h1>
+            <div class="search-box">
+                <form id="search-form">
+                    <input type="text" placeholder="Aduan Warga" id="search-input" required>
+                    <button type="submit">Cari</button>
+                </form>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="news-section">
+        <h2>Berita Terkini</h2>
+        <div class="news-grid">
+            <div class="news-card">
+                <img src="img/berita1.jpg" alt="Berita 1">
+                <h3>Potret Gubernur Khofifah Sambangi Sumenep</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <button>Selengkapnya</button>
+            </div>
+            <div class="news-card">
+                <img src="img/berita2.jpeg" alt="Berita 2">
+                <h3>Hasil Survey: Kepemimpinan Gubernur Direspon Positif</h3>
+                <p>Proin ac massa nulla. Ut faucibus arcu ac ligula suscipit...</p>
+                <button>Selengkapnya</button>
+            </div>
+            <div class="news-card">
+                <img src="img/berita3.jpg" alt="Berita 3">
+                <h3>Sejumlah Bangunan Rusak Akibat Gempa</h3>
+                <p>Suspendisse eget erat non velit malesuada pharetra...</p>
+                <button>Selengkapnya</button>
+            </div>
+        </div>
+        <button class="load-more">Lihat Berita Lainnya</button>
+    </section>
+
+    <section class="vision-section">
+        <div class="vision-content">
+            <img src="img/gubdanwakil.png" alt="Foto Gubernur dan wakil Jatim">
+            <div>
+                <h2>Visi</h2>
+                <p>Terwujudnya masyarakat Jawa Timur yang adil, sejahtera, unggul dan berakhlak dengan tata kelola pemerintahan yang partisipatoris inklusif melalui kerja bersama dan semangat gotong royong</p>
+                <button onclick="window.location.href='daftarpengaduan.html'">Lihat Semua Laporan</button> <!-- Tombol yang diubah -->
+            </div>
+    </section>
+
+    <section class="services"> 
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="img/arsip.png" alt="Logo Kearsipan" class="service-logo"> <!-- Ganti dengan path logo Anda -->
+                <i class="fas fa-file-alt"></i>
+                <h3>Kearsipan</h3>
+                <p>Layanan informasi arsip yang disediakan Pemerintah Provinsi Jawa Timur.</p>
+                <a href="" class="service-button">Selengkapnya</a>
+            </div>
+            <div class="service-card">
+                <img src="img/invest.png" alt="Logo Investasi" class="service-logo"> <!-- Ganti dengan path logo Anda -->
+                <i class="fas fa-money-bill"></i>
+                <h3>Investasi</h3>
+                <p>Informasi mengenai peluang investasi di berbagai sektor ekonomi daerah.</p>
+                <a href="" class="service-button">Selengkapnya</a>
+            </div>
+            <div class="service-card">
+                <img src="img/pengaduan.png" alt="Logo Pengaduan" class="service-logo"> <!-- Ganti dengan path logo Anda -->
+                <i class="fas fa-comments"></i>
+                <h3>Pengaduan</h3>
+                <p>Layanan pengaduan masyarakat terkait kebijakan atau pelayanan publik.</p>
+                <a href="pengaduan.html" class="service-button">Selengkapnya</a>
+            </div>            
+            <div class="service-card">
+                <img src="img/perijinan.png" alt="Logo Perijinan" class="service-logo"> <!-- Ganti dengan path logo Anda -->
+                <i class="fas fa-money-bill"></i>
+                <h3>Perijinan</h3>
+                <p>Layanan informasi dan kepengurusan prosedur perijinan yang berlaku di Jawa Timur.</p>
+                <a href="" class="service-button">Selengkapnya</a>
+            </div>
+            <div class="service-card">
+                <img src="img/rumahsakit.png" alt="Logo Rumah Sakit" class="service-logo"> <!-- Ganti dengan path logo Anda -->
+                <i class="fas fa-money-bill"></i>
+                <h3>Rumah Sakit</h3>
+                <p>Layanan informasi terkait dengan fasilitas rumah sakit yang ada di Provinsi Jawa Timur.</p>
+                <a href="rumahsakit.html" class="service-button">Selengkapnya</a>
+            </div>
+            <div class="service-card">
+                <img src="img/permohonaninformasi.png" alt="Logo Permohonan Informasi" class="service-logo"> <!-- Ganti dengan path logo Anda -->
+                <i class="fas fa-money-bill"></i>
+                <h3>Permohonan Informasi</h3>
+                <p>Layanan informasi apabila membutuhkan informasi untuk kepentingan tertentu.</p>
+                <a href="" class="service-button">Selengkapnya</a>
+            </div>
+            <div class="service-card">
+                <img src="img/samsat.png" alt="Logo E-Samsat" class="service-logo"> <!-- Ganti dengan path logo Anda -->
+                <i class="fas fa-money-bill"></i>
+                <h3>E - Samsat</h3>
+                <p>Temukan informasi mengenai pembayaran pajak kendaraan bermotor.</p>
+                <a href="e-samsat.html" class="service-button">Selengkapnya</a>
+            </div> 
+            <div class="service-card">
+                <img src="img/bursa.png" alt="Logo Bursa Kerja" class="service-logo"> <!-- Ganti dengan path logo Anda -->
+                <i class="fas fa-money-bill"></i>
+                <h3>Bursa Kerja</h3>
+                <p>Layanan informasi seputar lowongan pekerjaan dan peluang kerja yang sesuai dengan minat anda.</p>
+                <a href="" class="service-button">Selengkapnya</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="contact-info">
+                <img src="img/logo.png" alt="Logo Jatim">
+                <p>Gedung Negara Grahadi<br>Jl. Gubernur Suryo No.7, Surabaya, Jawa Timur</p>
+                <p>Email: info@jatimprov.go.id</p>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

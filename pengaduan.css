@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; 
+}
+
+.logo img {
+    max-width: 120px; 
+    height: auto; 
+    border-radius: 8px; 
+    margin-right: 10px; 
+}
+
+header img:hover {
+    transform: scale(1.1);
+}
+
+
+header h1 {
+    font-size: 2rem; 
+    color: white; 
+    margin-left: 10px; 
+}
+
+header p {
+    font-size: 1.1rem; 
+    margin-top: 10px; 
+    text-align: center; 
+}
+
+.complaint-form {
+    max-width: 600px;
+    margin: 40px auto; 
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.complaint-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+    font-size: 1rem;
+}
+
+.complaint-form input,
+.complaint-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fafafa;
+    transition: border-color 0.3s;
+}
+
+.complaint-form input:focus,
+.complaint-form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    background-color: white;
+}
+
+.complaint-form button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.complaint-form button:hover {
+    background-color: #218838;
+}
+
+.notification {
+    display: none; 
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .complaint-form {
+        margin: 50px 10px;
+        padding: 20px;
+    }
+
+    .complaint-form button {
+        padding: 12px;
+    }
+
+    .logo img {
+        max-width: 90px; 
+    }
+}

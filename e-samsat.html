@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Samsat</title>
+    <link rel="stylesheet" href="e-samsat.css">
+</head>
+<body>
+
+<header>
+    <a href="dashboard.html">
+        <img src="img/logo.png" alt="Logo Provinsi Jatim">
+    </a>
+    <h1>E-Samsat</h1>
+</header>
+
+<main>
+    <section class="description">
+        <h2>Tentang E-Samsat</h2>
+        <p>Selamat datang di E-Samsat, platform yang memudahkan Anda untuk menemukan informasi mengenai pembayaran pajak kendaraan bermotor.</p>
+    </section>
+
+    <section class="buttons">
+        <button id="payment-button">Bayar Pajak</button>
+        <button id="history-button">Riwayat Pembayaran</button>
+    </section>
+
+    <!-- Informasi Edukasi Berlalu Lintas -->
+    <section class="traffic-education">
+        <h2>Edukasi Berlalu Lintas</h2>
+        <p>Patuhi rambu lalu lintas dan selalu gunakan sabuk pengaman.</p>
+        <h3>Tips Keselamatan Berkendara:</h3>
+        <ul>
+            <li>Selalu periksa kondisi kendaraan sebelum berkendara.</li>
+            <li>Jaga jarak aman dengan kendaraan di depan.</li>
+            <li>Hindari penggunaan ponsel saat mengemudi.</li>
+            <li>Patuhilah batas kecepatan yang ditentukan.</li>
+        </ul>
+        <h3>Infografis:</h3>
+        <img src="img/lantas.jpg" alt="Infografis Keselamatan Berlalu Lintas" style="width: 100%; border-radius: 8px;">
+    </section>
+
+    <!-- Formulir Pembayaran -->
+    <div id="payment-form" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-form">&times;</span>
+            <h2>Formulir Pembayaran Pajak</h2>
+            <form id="vehicle-registration">
+                <label for="vehicle-number">Nomor Kendaraan:</label>
+                <input type="text" id="vehicle-number" required>
+
+                <label for="owner-name">Nama Pemilik:</label>
+                <input type="text" id="owner-name" required>
+
+                <button type="submit">Konfirmasi Pembayaran</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Riwayat Pembayaran -->
+    <div id="payment-history" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-history">&times;</span>
+            <h2>Riwayat Pembayaran</h2>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+
+    <div id="notification" class="notification"></div>
+</main>
+
+<footer>
+    <p>&copy; 2024 E-Samsat. Semua Hak Dilindungi.</p>
+</footer>
+
+<script src="e-samsat.js"></script>
+</body>
+</html>
